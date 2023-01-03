@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.container{
+    background-color: rgb(43, 38, 39);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr;
+    grid-template-areas: 
+     "a"
+     "b"
+     "c";
+    width:50% ;
+    max-width: 500px;
+    border-radius: 1rem;
+    min-width: 350px;
+    margin-top: 5rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    padding: 1rem;
+    max-height: 500px;
+}
+.score{
+    grid-area: a;
+    text-align: center;
+}
+.options{
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.red-btn{
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+span{
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 5px;
+    color: black;
+}
+button{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(83, 81, 81);
+}
+p{
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/*
+font-family: 'Bebas Neue', cursive;
+
+font-family: 'Rubik Mono One', sans-serif;*/
